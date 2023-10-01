@@ -19,8 +19,10 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		request.getRequestDispatcher("link.html").include(request, response);
 
-		String userid = request.getParameter("userid");
-		String password = request.getParameter("password");
+		//String userid = request.getParameter("userid");
+		//String password = request.getParameter("password");
+		String username = getEncryptedUser();
+                String password = getEncryptedPassword();
 
 		if (password.equals("admin")) {
 			out.print("Welcome, " + userid);
