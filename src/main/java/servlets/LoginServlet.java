@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 
 		//String userid = request.getParameter("userid");
 		//String password = request.getParameter("password");
-		String username = getEncryptedUser();
+		String userid = getEncryptedUser();
                 String password = getEncryptedPassword();
 
 		if (password.equals("admin")) {
