@@ -24,7 +24,5 @@ public class LogoutServlet extends HttpServlet {
         response.sendRedirect("login.html"); // Modifica l'URL in base alla tua struttura di directory
 
         // Alternativamente, puoi restituire un messaggio di conferma di logout
-        // PrintWriter out = response.getWriter();
-        // out.println("Logout avvenuto con successo!");
     }
 }
