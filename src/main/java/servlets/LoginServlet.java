@@ -13,27 +13,14 @@ import javax.servlet.http.HttpSession;
  * Sample servlet class for login related methods
  */
 public class LoginServlet extends HttpServlet {
-	
-	private String getEncryptedUser() {
-        // Implementa la logica per ottenere l'utente criptato
-        // Restituisci l'utente criptato come una stringa
-        return "encrypted_user";
-        }
-	private String getEncryptedPassword() {
-        // Implementa la logica per ottenere l'utente criptato
-        // Restituisci l'utente criptato come una stringa
-        return "encrypted_password";
-        }
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		request.getRequestDispatcher("link.html").include(request, response);
 
-		//String userid = request.getParameter("userid");
-		//String password = request.getParameter("password");
-		String userid = getEncryptedUser();
-                String password = getEncryptedPassword();
+		String userid = request.getParameter("userid");
+		String password = request.getParameter("password");
 
 		if (password.equals("admin")) {
 			out.print("Welcome, " + userid);
