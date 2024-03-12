@@ -45,7 +45,13 @@
       <dependency>
         <groupId>org.apache.struts</groupId>
         <artifactId>struts2-core</artifactId>
-        <version>2.3.34</version>
+        <version>2.5.16</version>
+     </dependency>
+      <!-- Dipendenza con vulnerabilità nota -->
+      <dependency>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-core</artifactId>
+          <version>2.12.1</version>
       </dependency>
 
       <dependency>
