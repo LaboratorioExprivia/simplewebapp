@@ -55,11 +55,13 @@
      </dependency>
     
       <!-- Dipendenza con vulnerabilità nota -->
+    <!--
       <dependency>
           <groupId>org.apache.logging.log4j</groupId>
           <artifactId>log4j-core</artifactId>
           <version>2.12.1</version>
       </dependency>
+    -->
     <!-- Dipendenza con vulnerabilità nota -->
     <!--
      <dependency>
